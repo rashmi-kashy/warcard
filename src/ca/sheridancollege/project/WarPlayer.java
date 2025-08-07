@@ -12,7 +12,7 @@ import java.util.List;
  */
 public class WarPlayer extends Player {
     
-    private LinkedList<Card> hand = new LinkedList<>();
+    protected LinkedList<Card> hand = new LinkedList<>();
 
     public WarPlayer(String name) {
         super(name);
