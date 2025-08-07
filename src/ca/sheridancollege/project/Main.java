@@ -4,7 +4,7 @@
  */
 package ca.sheridancollege.project;
 
-import java.util.ArrayList;
+
 import java.util.List;
 
 
@@ -18,8 +18,8 @@ public class Main {
         deck.generateDeck();
         deck.shuffle();
 
-        WarPlayer p1 = new WarPlayer("Ash");
-        WarPlayer p2 = new WarPlayer("Misty");
+        WarPlayer p1 = new WarPlayer("Vaqes");
+        WarPlayer p2 = new WarPlayer("Rashmi");
 
         for (int i = 0; i < 52; i++) {
             if (i % 2 == 0) {
