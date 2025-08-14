@@ -16,6 +16,19 @@ public class WarHandler {
         List<Card> warPile = new ArrayList<>();
         warPile.add(c1);
         warPile.add(c2);
+        
+        if (p1.getCardCount() <4){
+            
+            p2.collectCards(warPile);
+            return warPile;}
+        
+        if (p2.getCardCount() <4){
+        
+        
+        p1.collectCards(warPile);
+        return warPile;
+        
+        }        
         for (int i = 0; i < 3; i++) {
             Card card1 = p1.playCard();
             Card card2 = p2.playCard();
