@@ -11,7 +11,7 @@ import java.util.List;
  * @author rashm
  */
 public class WarPlayer extends Player {
-    
+
     protected LinkedList<Card> hand = new LinkedList<>();
 
     public WarPlayer(String name) {
@@ -43,9 +43,9 @@ public class WarPlayer extends Player {
     public boolean hasCards() {
         return !hand.isEmpty();
     }
-    
+
     public int getCardCount() {
         return hand.size();
     }
 }
-    
+
