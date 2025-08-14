@@ -6,7 +6,7 @@ package ca.sheridancollege.project;
 
 
 import java.util.List;
-
+import java.util.Scanner;
 
 /**
  *
@@ -14,12 +14,22 @@ import java.util.List;
  */
 public class Main {
     public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+
+        // Ask for player names
+        System.out.print("Enter Player 1 name: ");
+        String player1Name = sc.nextLine();
+
+        System.out.print("Enter Player 2 name: ");
+        String player2Name = sc.nextLine();
+        
         GroupOfCards deck = new GroupOfCards(52);
         deck.generateDeck();
         deck.shuffle();
 
-        WarPlayer p1 = new WarPlayer("Vaqes");
-        WarPlayer p2 = new WarPlayer("Rashmi");
+        WarPlayer p1 = new WarPlayer(player1Name);
+        WarPlayer p2 = new WarPlayer(player2Name);
 
         for (int i = 0; i < 52; i++) {
             if (i % 2 == 0) {
@@ -36,7 +46,8 @@ public class Main {
         game.registerPlayer(p2);
 
         game.play();
-        game.declareWinner();    }
+        game.declareWinner();  
+     sc.close();}
 }
     
 
