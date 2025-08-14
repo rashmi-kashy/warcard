@@ -19,7 +19,8 @@ public abstract class Card {
     
     public int getRank(){
     
-    return rank;}
+    return rank;
+    }
     
     public String getSuit(){
     
